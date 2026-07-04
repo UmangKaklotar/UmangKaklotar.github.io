@@ -80,7 +80,7 @@ function handleContactSubmit(event) {
   // No backend is connected — this opens the user's email client instead.
   const subject = encodeURIComponent(`Website contact from ${name}`);
   const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-  window.location.href = `mailto:hello@kaklotarstudio.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:hello@uktechnology.com?subject=${subject}&body=${body}`;
 
   status.textContent = "Opening your email app to send this message…";
   status.style.color = "var(--success)";
