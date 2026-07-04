@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO / meta ===== -->
+<title>Kaklotar Studio — Simple apps, thoughtfully built</title>
+<meta name="description" content="Kaklotar Studio builds simple, fast Android apps focused on doing one job well. Explore our apps on Google Play.">
+<meta name="theme-color" content="#0B0F17">
+<link rel="canonical" href="https://umangkaklotar.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kaklotar Studio — Simple apps, thoughtfully built">
+<meta property="og:description" content="We build simple, fast Android apps focused on doing one job well.">
+<meta property="og:url" content="https://umangkaklotar.github.io/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER (same block on every page) ============ -->
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="mark">K</span>Kaklotar Studio</a>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" stroke-linecap="round"/><circle cx="12" cy="12" r="4.2"/></svg>
+      </button>
+      <button id="hamburger" onclick="toggleMobileNav()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero wrap">
+  <div class="eyebrow">APP DEVELOPMENT STUDIO</div>
+  <h1>Simple apps, <span class="accent">thoughtfully built</span>.</h1>
+  <p class="lead">Kaklotar Studio designs and builds focused Android apps that do one job well — no bloat, no dark patterns, just software that works.</p>
+  <div class="hero-actions">
+    <a href="apps.html" class="btn primary">Explore our apps</a>
+    <a href="contact.html" class="btn ghost">Get in touch</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><b>1+</b><span>APPS PUBLISHED</span></div>
+    <div class="stat"><b>Android</b><span>PLATFORM</span></div>
+    <div class="stat"><b>24–48h</b><span>SUPPORT REPLY</span></div>
+  </div>
+</section>
+
+<!-- ============ HIGHLIGHTS ============ -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">WHY KAKLOTAR STUDIO</span>
+      <h2 class="reveal">Built on a few simple principles</h2>
+    </div>
+    <div class="grid-3">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke-linejoin="round"/></svg></div>
+        <h3>Privacy-first</h3>
+        <p>Only the permissions each app strictly needs — nothing collected without a clear reason.</p>
+      </div>
+      <div class="feature-card reveal d1">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" stroke-linejoin="round"/></svg></div>
+        <h3>Lightweight & fast</h3>
+        <p>Small install size, low resource usage — built to run smoothly on any device.</p>
+      </div>
+      <div class="feature-card reveal d2">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.5 8.5 0 1 1-3.8-7.1M21 4v6h-6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Real support</h3>
+        <p>Every app is backed by a real person who replies — not an automated ticket queue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED APPS ============ -->
+<section class="wrap">
+  <div class="section-head">
+    <span class="eyebrow">OUR WORK</span>
+    <h2 class="reveal">Featured apps</h2>
+    <p class="reveal">A glimpse of what we've shipped. See everything on the Apps page.</p>
+  </div>
+  <div class="grid-3" id="featured-apps"></div>
+  <div style="margin-top:34px;">
+    <a href="apps.html" class="btn ghost">View all apps →</a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="wrap">
+  <div class="cta-banner reveal">
+    <h2>Have a question about one of our apps?</h2>
+    <p>We reply to every message within 24–48 hours. No bots, no ticket numbers.</p>
+    <a href="contact.html" class="btn primary">Contact support</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER (same block on every page) ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><span class="mark">K</span>Kaklotar Studio</a>
+        <p>Simple, fast Android apps — built and supported independently from Surat, India.</p>
+        <div class="social-row">
+          <a href="https://github.com/umangkaklotar" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.4 0C6.3 2.8 5.2 3.1 5.2 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 3.8 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+          <a href="mailto:umangkaklotar01@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:umangkaklotar01@gmail.com">umangkaklotar01@gmail.com</a>
+        <a href="tel:+918469186173">+91 84691 86173</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year"></span> Kaklotar Studio. All rights reserved.</span>
+      <span>Made with <span class="made-with">❤</span> in India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/apps-data.js"></script>
+<script src="assets/js/render-apps.js"></script>
+<script src="assets/js/main.js"></script>
+<script>renderApps("featured-apps", { featuredOnly: true, limit: 3 });</script>
+</body>
+</html>
